@@ -1,10 +1,10 @@
 {
-    "name": "lit-html",
+    "name": "html-in-template-string-vscode",
     "private": true,
-    "displayName": "lit-html",
+    "displayName": "html-in-template-string-vscode",
     "description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged template strings",
     "version": "1.11.1",
-    "publisher": "bierner",
+    "publisher": "tomko-team",
     "icon": "docs/logo.png",
     "license": "MIT",
     "galleryBanner": {
@@ -12,20 +12,21 @@
         "theme": "light"
     },
     "repository": {
-        "url": "https://github.com/mjbvz/vscode-lit-html.git"
+        "url": "https://github.com/tomko-team/html-in-template-string-vscode.git"
     },
     "bugs": {
-        "url": "https://github.com/mjbvz/vscode-lit-html/issues"
+        "url": "https://github.com/tomko-team/html-in-template-string-vscode/issues"
     },
     "categories": [
         "Programming Languages"
     ],
     "keywords": [
-        "lit-html",
+        "handledom",
         "javascript",
         "typescript",
         "html",
-        "template"
+        "template",
+        "template string"
     ],
     "engines": {
         "vscode": "^1.29.0"
@@ -129,7 +130,7 @@
         ],
         "typescriptServerPlugins": [
             {
-                "name": "typescript-lit-html-plugin",
+                "name": "typescript-html-plugin",
                 "enableForWorkspaceTypeScriptVersions": true
             }
         ],
@@ -151,7 +152,7 @@
         "test": "node ./out/test"
     },
     "dependencies": {
-        "typescript-lit-html-plugin": "0.9.0"
+        "typescript-html-plugin": "file:../typescript-html-plugin"
     },
     "devDependencies": {
         "@types/node": "^12.7.5",

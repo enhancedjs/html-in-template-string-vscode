@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 const typeScriptExtensionId = 'vscode.typescript-language-features';
-const pluginId = 'typescript-lit-html-plugin';
+const pluginId = 'typescript-html-plugin';
 const configurationSection = 'lit-html';
 
 interface SynchronizedConfiguration {
