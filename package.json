@@ -130,7 +130,7 @@
         ],
         "typescriptServerPlugins": [
             {
-                "name": "typescript-html-plugin",
+                "name": "@tomko/typescript-html-plugin",
                 "enableForWorkspaceTypeScriptVersions": true
             }
         ],
@@ -152,7 +152,7 @@
         "test": "node ./out/test"
     },
     "dependencies": {
-        "typescript-html-plugin": "file:../typescript-html-plugin"
+        "@tomko/typescript-html-plugin": "0.9.1"
     },
     "devDependencies": {
         "@types/node": "^12.7.5",
