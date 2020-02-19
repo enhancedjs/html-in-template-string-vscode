@@ -1,9 +1,9 @@
 {
-    "name": "html-in-template-string-vscode",
+    "name": "html-in-template-string",
     "private": true,
-    "displayName": "html-in-template-string-vscode",
-    "description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged template strings",
-    "version": "1.11.1",
+    "displayName": "html-in-template-string",
+    "description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged with `handledom` and `html` template strings.",
+    "version": "0.0.1",
     "publisher": "tomko-team",
     "icon": "docs/logo.png",
     "license": "MIT",

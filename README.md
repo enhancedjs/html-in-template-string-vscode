@@ -1,6 +1,6 @@
 # VS Code Plugin: tomko-team.html-in-template-string
 
-Syntax highlighting and IntelliSense for css and scss in template strings.
+Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged with `handledom` and `html` template strings.
 
 This is a fork of [vscode-lit-html](https://github.com/mjbvz/vscode-lit-html), the purpose is to just support HTML.
 
@@ -9,7 +9,7 @@ This is a fork of [vscode-lit-html](https://github.com/mjbvz/vscode-lit-html), t
 Inside VSCode, press `Ctrl+P`, and enter:
 
 ```
-ext install tomko-team.scss-in-template-string
+ext install tomko-team.html-in-template-string
 ```
 
 It should be the top result.
