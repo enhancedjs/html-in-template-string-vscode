@@ -2,9 +2,9 @@
     "name": "html-in-template-string",
     "private": true,
     "displayName": "html-in-template-string",
-    "description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged with `handledom` and `html` template strings.",
-    "version": "0.0.1",
-    "publisher": "tomko-team",
+    "description": "Syntax highlighting and IntelliSense for HTML inside of JavaScript and TypeScript tagged with `html` template strings.",
+    "version": "0.0.2",
+    "publisher": "enhancedjs",
     "icon": "docs/logo.png",
     "license": "MIT",
     "galleryBanner": {
@@ -12,21 +12,20 @@
         "theme": "light"
     },
     "repository": {
-        "url": "https://github.com/tomko-team/html-in-template-string-vscode.git"
+        "url": "https://github.com/enhancedjs/html-in-template-string-vscode.git"
     },
     "bugs": {
-        "url": "https://github.com/tomko-team/html-in-template-string-vscode/issues"
+        "url": "https://github.com/enhancedjs/html-in-template-string-vscode/issues"
     },
     "categories": [
         "Programming Languages"
     ],
     "keywords": [
-        "handledom",
         "javascript",
         "typescript",
         "html",
         "template",
-        "template string"
+        "string"
     ],
     "engines": {
         "vscode": "^1.29.0"
@@ -130,7 +129,7 @@
         ],
         "typescriptServerPlugins": [
             {
-                "name": "@tomko/typescript-html-plugin",
+                "name": "@enhancedjs/typescript-html-plugin",
                 "enableForWorkspaceTypeScriptVersions": true
             }
         ],
@@ -152,14 +151,14 @@
         "test": "node ./out/test"
     },
     "dependencies": {
-        "@tomko/typescript-html-plugin": "0.9.1"
+        "@enhancedjs/typescript-html-plugin": "0.0.3"
     },
     "devDependencies": {
-        "@types/node": "^12.7.5",
-        "@types/vscode": "^1.29.0",
-        "glob": "^7.1.4",
-        "mocha": "^6.2.0",
-        "typescript": "^3.6.3",
-        "vscode-test": "^1.2.0"
+        "@types/node": "^12.12.47",
+        "@types/vscode": "^1.46.0",
+        "glob": "^7.1.6",
+        "mocha": "^8.0.1",
+        "typescript": "^3.9.5",
+        "vscode-test": "^1.4.0"
     }
 }
