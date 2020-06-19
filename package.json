@@ -3,7 +3,7 @@
     "private": true,
     "displayName": "html-in-template-string",
     "description": "Syntax highlighting and IntelliSense for HTML inside of JavaScript and TypeScript tagged with `html` template strings.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "enhancedjs",
     "icon": "docs/logo.png",
     "license": "MIT",
@@ -24,6 +24,7 @@
         "javascript",
         "typescript",
         "html",
+        "template string",
         "template",
         "string"
     ],
@@ -151,7 +152,7 @@
         "test": "node ./out/test"
     },
     "dependencies": {
-        "@enhancedjs/typescript-html-plugin": "0.0.3"
+        "@enhancedjs/typescript-html-plugin": "0.0.5"
     },
     "devDependencies": {
         "@types/node": "^12.12.47",

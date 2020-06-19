@@ -1,4 +1,4 @@
-import * as vscode from 'vscode';
+import { ExtensionContext, extensions, workspace, WorkspaceConfiguration } from 'vscode';
 
 const typeScriptExtensionId = 'vscode.typescript-language-features';
 const pluginId = '@enhancedjs/typescript-html-plugin';
@@ -11,8 +11,8 @@ interface SynchronizedConfiguration {
     }
 }
 
-export async function activate(context: vscode.ExtensionContext) {
-    const extension = vscode.extensions.getExtension(typeScriptExtensionId);
+export async function activate(context: ExtensionContext) {
+    const extension = extensions.getExtension(typeScriptExtensionId);
     if (!extension) {
         return;
     }
@@ -26,7 +26,7 @@ export async function activate(context: vscode.ExtensionContext) {
         return;
     }
 
-    vscode.workspace.onDidChangeConfiguration(e => {
+    workspace.onDidChangeConfiguration(e => {
         if (e.affectsConfiguration(configurationSection)) {
             synchronizeConfiguration(api);
         }
@@ -40,7 +40,7 @@ function synchronizeConfiguration(api: any) {
 }
 
 function getConfiguration(): SynchronizedConfiguration {
-    const config = vscode.workspace.getConfiguration(configurationSection);
+    const config = workspace.getConfiguration(configurationSection);
     const outConfig: SynchronizedConfiguration = {
         format: {}
     };
@@ -51,7 +51,7 @@ function getConfiguration(): SynchronizedConfiguration {
     return outConfig;
 }
 
-function withConfigValue<T>(config: vscode.WorkspaceConfiguration, key: string, withValue: (value: T) => void): void {
+function withConfigValue<T>(config: WorkspaceConfiguration, key: string, withValue: (value: T) => void): void {
     const configSetting = config.inspect(key);
     if (!configSetting) {
         return;

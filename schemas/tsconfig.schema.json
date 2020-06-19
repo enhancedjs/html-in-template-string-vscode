@@ -13,7 +13,7 @@
                             "properties": {
                                 "name": {
                                     "enum": [
-                                        "typescript-lit-html-plugin"
+                                        "@enhancedjs/typescript-html-plugin"
                                     ]
                                 }
                             },
